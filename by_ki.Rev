@@ -105,5 +105,4 @@ for (k in 2:maxK) {
 mymodel = model(phylogeny)
 
 monitors = VectorMonitors()
-monitors.append( mnModel(filename = paramFile, printgen = 6, stochasticOnly = TRUE, exclude = ["rel_br_lengths"]) )
 monitors.append( mnScreen(printgen = 300, prior = FALSE, posterior = FALSE) )
